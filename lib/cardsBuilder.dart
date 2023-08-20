@@ -10,7 +10,7 @@ class CardsBuilder{
 
   Future<List<Cards>> readJson() async {
     final response =
-    await http.get(Uri.parse('https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=50'));
+    await http.get(Uri.parse('https://tarot-api-3hv5.onrender.com/api/v1/cards/random?n=10'));
 
     if (response.statusCode == 200) {
     } else {
